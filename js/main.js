@@ -48,6 +48,9 @@ function showSearch() {
   searchDelayEls.forEach(function (el, index) {
     el.style.transitionDelay = index * .4 / searchDelayEls.length  + 's'
   })
+  setTimeout(function () {
+    searchInputEl.focus()
+  }, 600)
 }
 function hideSearch() {
   headerEl.classList.remove('searching')
@@ -59,4 +62,5 @@ function hideSearch() {
     el.style.transitionDelay = index * .4 / searchDelayEls.length  + 's'
   })
   searchDelayEls.reverse() // 원래상태로 다시 뒤집어주기
+  searchInputEl.value = '' // 인풋요소 초기화
 }

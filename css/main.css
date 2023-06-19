@@ -99,10 +99,27 @@ header .basket .arrow::before {
   top: 0;
   left: 50%;
 }
-header .basket .message {}
-header .basket ul {}
-header .basket ul li {}
-header .basket ul li a {}
+header .basket .message {
+  padding: 30px 0;
+  font-size: 13px;
+  color: #6e6e6e;
+  text-align: center;
+}
+header .basket ul {
+  margin-top: 10px;
+}
+header .basket ul li {
+  border-top: 1px solid #d2d2d2;
+}
+header .basket ul li a {
+  padding: 14px;
+  display: block;
+  font-size: 13px;
+  color: #0071e3;
+}
+header .basket ul li a:hover {
+  text-decoration: underline;
+}
 
 /* 검색바 */
 header .search-wrap {

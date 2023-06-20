@@ -96,8 +96,14 @@ a.link::after {
   content :' >'
 }
 
+/* feature */
+.feature {
+  display: flex;
+}
+
 /* figures */
 .figures {
+  flex-grow: 1;
   position: relative;
 }
 .figures figure,
@@ -110,4 +116,34 @@ a.link::after {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+
+/* info */
+.infos {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+.infos.infos--center {
+  justify-content: center;
+}
+.infos.infos--end {
+  justify-content: flex-end;
+}
+.info {
+  max-width: 330px;
+  margin-bottom: 24px;
+}
+.info .icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 0 -15px -30px;
+  background-image: url('../images/sprite_apps.png');
+}
+.info p {
+  font-size: 21.5px;
+  font-weight: bold;
+  line-height: 1.5;
 }

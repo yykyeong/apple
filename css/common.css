@@ -144,6 +144,9 @@ a.link::after {
   transform: translate(0,0);
   opacity: 1;
 }
+.infos--large .info {
+  max-width: 410px;
+}
 .info .icon {
   width: 100px;
   height: 100px;
@@ -172,6 +175,11 @@ a.link::after {
   font-size: 21.5px;
   font-weight: bold;
   line-height: 1.5;
+}
+.info a.link {
+  margin-top: 44px;
+  display: block;
+  font-size: 19.5px;
 }
 
 /* 파워_애니메이션 */

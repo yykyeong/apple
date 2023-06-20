@@ -1,0 +1,39 @@
+html.fixed {
+  position: fixed;
+  width: 100%;
+  /* 줄어드려는 속성이 있기 때문에 너비값 줘야함 */
+  overflow-y: scroll; /* 항상 스크롤 */
+}
+body {
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  word-break: keep-all;
+  color: #1d1d1d;
+}
+a {
+  text-decoration: none;
+  color: #1d1d1d;
+}
+
+/* 버튼 */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+  font-size: 11px;
+  line-height: 1;
+  color: #fff;
+  background-color: #0071e3;
+}
+.btn:hover {
+  opacity: .7;
+}
+.btn:focus { /* 탭키 */
+  box-shadow: 0 0 0 4px #81b9f1;
+}

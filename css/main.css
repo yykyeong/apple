@@ -4,8 +4,6 @@ header {
 }
 header .inner {
   max-width: 1020px;
-  margin: 0 auto;
-  position: relative;
 }
 header ul.menu {
   height: 44px;
@@ -226,7 +224,6 @@ nav {
 nav .inner {
   max-width: 1000px;
   height: 52px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
 }
@@ -255,3 +252,43 @@ nav .menu li.active a {
 nav .menu li.active:hover a {
   color: #1d1d1d;
 } 
+
+/* hero */
+.hero {
+  background-color: #f5f5f5;
+}
+.hero .inner {
+  padding-bottom: 110px;
+}
+.hero h1 {
+  width: 221px;
+  height: 91px;
+  background-image: url('../images/hero_ipad_text.png');
+}
+.hero figure {}
+.hero figure img {}
+.hero figure figcaption {}
+.hero figure figcaption .caption-camera {}
+.hero figure figcaption .caption-chip {}
+.hero figure figcaption .caption-storage {}
+.hero h2 {
+  width: 729px;
+  height: 145px;
+  margin: 0 auto;
+  background-image: url('../images/hero_headline.png');
+}
+.hero p.pricing {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.hero p.description {
+  width: 88%; /* 줄바꿈때문에 */
+  margin: 18px auto 0;
+  font-size: 19px;
+  text-align: center;
+}
+.hero .links {
+  margin-top: 30px;
+}

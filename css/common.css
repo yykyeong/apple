@@ -1,3 +1,19 @@
+section.hero,
+/* section.power,
+section.display, */
+section.camera,
+section.wireless,
+section.accessories,
+section.ipados,
+section.apps,
+section.privacy,
+section.accessibility,
+section.ar,
+section.environment,
+section.accessory-shop,
+section.compare {display: none;}
+
+
 /* 변수 */
 html {
   --color-white: #FFF;
@@ -39,6 +55,13 @@ img {
 p {
   line-height: 1.6;
 }
+sup {
+  margin-right: 6px;
+  font-size: 0.7em;
+  vertical-align: top;
+}
+
+
 /* inner */
 .inner {
   max-width: 980px;

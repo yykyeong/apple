@@ -1,3 +1,19 @@
+/* 변수 */
+html {
+  --color-white: #FFF;
+  --color-black: #000;
+  --color-font: #1D1D1D;
+  --color-font-darkgray: #6E6E6E;
+  --color-font-middlegray: #b7b7b7;
+  --color-font-lightgray: #F5F5F5;
+  --color-link: #0071E3;
+  --color-link-focus: #81B9F1;
+  --color-border: #D2D2D2;
+  --color-header: #3A3A3A;
+  --color-section: #F5F5F5;
+  --color-shadow: rgba(0, 0, 0, .4);
+}
+
 html.fixed {
   position: fixed;
   width: 100%;
@@ -9,11 +25,11 @@ body {
   line-height: 1;
   font-family: 'Roboto', 'Noto Sans KR', sans-serif;
   word-break: keep-all;
-  color: #1d1d1d;
+  color: var(--color-font);
 }
 a {
   text-decoration: none;
-  color: #1d1d1d;
+  color: var(--color-font);
 }
 img {
   display: block;
@@ -43,14 +59,14 @@ p {
   outline: none;
   font-size: 11px;
   line-height: 1;
-  color: #fff;
-  background-color: #0071e3;
+  color: var(--color-white);
+  background-color: var(--color-link);
 }
 .btn:hover {
   opacity: .7;
 }
 .btn:focus { /* 탭키 */
-  box-shadow: 0 0 0 4px #81b9f1;
+  box-shadow: 0 0 0 4px var(--color-link-focus);
 }
 
 /* 대체텍스트 */
@@ -69,7 +85,7 @@ p {
   gap: 40px;
 }
 a.link {
-  color: #0071e3;
+  color: var(--color-link);
   font-size: 19px;
   line-height: 1.3;
 }

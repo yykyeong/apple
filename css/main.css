@@ -4,6 +4,7 @@ header {
   background-color: var(--color-header);
   position: relative; /* 포지션이 있어야 z-index 동작함 */
   z-index: 9;
+  transition: .4s;
 }
 header .inner {
   max-width: 1020px;
@@ -17,6 +18,9 @@ header ul.menu > li {
   display: flex;
   position: relative;
   transition: .4s;
+}
+header ul.menu > li.menu-starter {
+  display: none;
 }
 header ul.menu > li > a {
   padding: 0 10px;
@@ -191,6 +195,11 @@ header .search .autocompletes ul li:hover a {
   background-color: var(--color-section);
   color: var(--color-link);
 }
+header .clone-menu {
+  display: none;
+}
+
+
 header .search input,
 header .search .search-icon,
 header .search .autocompletes h3,
@@ -217,6 +226,7 @@ header.searching .search .autocompletes li {
 
 /* 내비게이션 */
 nav {
+  --nav-height : 52px;
   background-color: rgba(255,255,255,.7);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--color-border);
@@ -226,7 +236,7 @@ nav {
 }
 nav .inner {
   max-width: 1000px;
-  height: 52px;
+  height: var(--nav-height);
   display: flex;
   align-items: center;
 }
@@ -261,6 +271,7 @@ main {
 }
 
 /* hero */
+/* Hero */
 .hero {
   background-color: var(--color-section);
 }
@@ -270,7 +281,7 @@ main {
 .hero h1 {
   width: 221px;
   height: 91px;
-  background-image: url('../images/hero_ipad_text.png');
+  background-image: url("../images/hero_ipad_text.png");
   position: absolute;
   transform: translate(624px, 235px);
   z-index: 1;
@@ -281,29 +292,29 @@ main {
 .hero figure {
   transform: translate(74px, -64px);
 }
-.hero figure figcaption .caption-camera {
+.hero figcaption .caption-camera {
   width: 120px;
   height: 84px;
   background-image: url("../images/hero_ipad_caption_camera.png");
   transform: translate(43px, 580px);
 }
-.hero figure figcaption .caption-chip {
+.hero figcaption .caption-chip {
   width: 95px;
   height: 43px;
   background-image: url("../images/hero_ipad_caption_chip.png");
   transform: translate(589px, 510px);
 }
-.hero figure figcaption .caption-storage {
+.hero figcaption .caption-storage {
   width: 80px;
   height: 43px;
   background-image: url("../images/hero_ipad_caption_storage.png");
   transform: translate(627px, 631px);
 }
 .hero h2 {
-  width: 729px;
+  width: 738px;
   height: 145px;
   margin: 0 auto;
-  background-image: url('../images/hero_headline.png');
+  background-image: url("../images/hero_headline.png");
 }
 .hero p.pricing {
   margin-top: 40px;
@@ -312,7 +323,7 @@ main {
   text-align: center;
 }
 .hero p.description {
-  width: 88%; /* 줄바꿈때문에 */
+  width: 88%;
   margin: 18px auto 0;
   font-size: 19px;
   text-align: center;
